@@ -54,7 +54,8 @@
   }
 
   .voice-grid {
-    width: 80%;
+    width: 100%;
+    max-width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@
     text-align: left;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     height: 30px;
   }
   .voice-number {
@@ -82,30 +83,30 @@
   }
   audio.voice {
     outline: none;
-    width: 550px;
+    width: 600px;
     height: 30px;
     flex-shrink: 0;
   }
-  textarea.reason-input {
-    width: 450px;
-    min-height: 30px;
-    font-size: 13px;
-    padding: 6px 8px;
-    border: 1px solid #bbb;
-    border-radius: 4px;
-    resize: vertical;
-    box-sizing: border-box;
-  }
   .checkbox-container {
-    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 6px;
     font-size: 15px;
     flex-shrink: 0;
-    min-width: 80px;
+    min-width: 60px;
   }
-
+ .reason-input {
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  padding: 5px 8px;  
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  resize: none;
+  box-sizing: border-box;
+  margin-left: auto;
+  line-height: 20px; 
+}
   .note {
     text-align: center;
     color: #555;
@@ -190,253 +191,253 @@
   <div class="voice-card">
     <div class="voice-number">1</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_001.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="1" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">2</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_002.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="2" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">3</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_003.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="3" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">4</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_004.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="4" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">5</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_005.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="5" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">6</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_006.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="6" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">7</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_007.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="7" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">8</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_008.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="8" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">9</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_009.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="9" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">10</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_010.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="10" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">11</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_011.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="11" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">12</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_012.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="12" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">13</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_013.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="13" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">14</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_014.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="14" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">15</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_015.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="15" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">16</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_016.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="16" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">17</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_017.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="17" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">18</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_018.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="18" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">19</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_019.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="19" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">20</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_020.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="20" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">21</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_021.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="21" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">22</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_022.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="22" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">23</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_023.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="23" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">24</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_024.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="24" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">25</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_025.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="25" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">26</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_026.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="26" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">27</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_027.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="27" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
   <div class="voice-card">
     <div class="voice-number">28</div>
     <audio class="voice" controls controlsList="nodownload noplaybackrate" src="Chat_GPT_F_028.mp3"></audio>
-    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
     <div class="checkbox-container">
       <input type="checkbox" name="voice" value="28" onchange="limitSelection(this)"> 선택
     </div>
+    <textarea class="reason-input" placeholder="선택한 이유를 입력해주세요."></textarea>
   </div>
 
 </div>
@@ -450,7 +451,7 @@
 </div>
 
 <p class="upload-info">
-  제출 후 다운로드된 <b>[Chat_GPT]_[이름]_results.csv</b> 파일을 아래의 [업로드하기] 링크로 들어가서 업로드해주세요. (마우스 드래그로도 업로드 가능합니다)<br>
+  제출 후 다운로드된 <b>[ChatGPT]_[이름]_results.csv</b> 파일을 아래의 [업로드하기] 링크로 들어가서 업로드해주세요. (마우스 드래그로도 업로드 가능합니다)<br>
   <a href="https://drive.google.com/drive/u/0/folders/1c0Vr-Ax-dnAKpMVzVIKnN1GSdw8lLAcw" target="_blank">[업로드하기]</a>
 </p>
 
@@ -506,13 +507,24 @@ function downloadResults() {
   const encodedUri = encodeURI("data:text/csv;charset=utf-8," + csvContent);
   const link = document.createElement("a");
   link.setAttribute("href", encodedUri);
-  link.setAttribute("download", `[Chat_GPT]_${name}_results.csv`);
+  link.setAttribute("download", `ChatGPT_${name}_results.csv`);
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
+
+  document.querySelectorAll('.reason-input').forEach(textarea => {
+    textarea.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+      }
+    });
+  });
+</script>
+
 </script>
 
 </body>
 </html>
+
 
