@@ -53,59 +53,72 @@
     display: none;
   }
 
-  .voice-grid {
-    width: 100%;
-    max-width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .voice-card {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    height: 30px;
-  }
-  .voice-number {
-    font-weight: bold;
-    font-size: 16px;
-    width: 30px;
-    flex-shrink: 0;
-    color: #333;
-    text-align: center;
-  }
-  audio.voice {
-    outline: none;
-    width: 600px;
-    height: 30px;
-    flex-shrink: 0;
-  }
-  .checkbox-container {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 15px;
-    flex-shrink: 0;
-    min-width: 60px;
-  }
- .reason-input {
+.voice-grid {
+  width: 100%;          
+  max-width: 80%;       
+  margin: 0 auto;       
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-sizing: border-box;
+  padding: 0 10px;      
+}
+
+.voice-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 45px; 
+  box-sizing: border-box;
   width: 100%;
+  overflow: hidden;
+}
+
+.voice-number {
+  font-weight: bold;
+  font-size: 16px;
+  width: 30px;
+  flex-shrink: 0;
+  color: #333;
+  text-align: center;
+}
+
+audio.voice {
+  outline: none;
+  flex: 1 1 45%;      
+  min-width: 250px;
+  max-width: 600px;
+  height: 30px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  flex-shrink: 0;
+  min-width: 60px;
+  justify-content: center;
+}
+
+.reason-input {
+  flex: 1 1 35%;
   height: 30px;
   font-size: 13px;
-  padding: 5px 8px;  
+  padding: 5px 8px;
   border: 1px solid #bbb;
   border-radius: 4px;
   resize: none;
   box-sizing: border-box;
-  margin-left: auto;
-  line-height: 20px; 
+  line-height: 20px;
+  min-width: 150px;
+  max-width: 700px;
+  overflow: hidden;
 }
   .note {
     text-align: center;
@@ -526,5 +539,6 @@ function downloadResults() {
 
 </body>
 </html>
+
 
 
